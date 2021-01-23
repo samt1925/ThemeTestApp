@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThemeTestApp.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="{AppThemeBinding Light=#2196F3,Dark=Black}" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button Text="Change to Light Theme" Clicked="Button_Clicked"></Button>
+        <Button Text="Change to Dark Theme" Clicked="Button_Clicked_1"></Button>
+        <Button Text="Change to Unspecified Theme" Clicked="Button_Clicked_2"></Button>
+        <!--<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Label Text="Reverse Theme" TextColor="{AppThemeBinding Light=Black,Dark=Black}"></Label>
+            <Switch x:Name="temaSwitch" Toggled="Switch_Toggled" ></Switch>
+        </StackLayout>-->
+    </StackLayout>
+
+</ContentPage>
